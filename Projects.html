@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="portfolio.css">
+</head>
+<style>
+    body{
+        background: #111;
+    }
+
+    .navbar{
+        background-color: #dc143c;
+        padding: 1em;
+    }
+
+    .cards .title::before{
+        background: #fff;
+    }
+    .cards .title::after{
+        background: #111;
+        content: "what i did";
+    }
+
+    .projects{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 5%;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, 0);
+}
+
+    .title{
+        color: #fff;
+    }
+
+    article{
+        color: #fff;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        margin-bottom: 2%;
+    }
+
+    h2{
+        color: #dc143c;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        margin-bottom: 2%;
+    }
+
+    .project{
+        width: 500px;
+        background-color: #333;
+        border-radius: 30px;
+    }
+
+    video{
+        border-top-right-radius: 30px;
+        border-top-left-radius: 30px;
+    }
+    .btn{
+        display: flex;
+        justify-content: space-around;
+        margin-top: 5%;
+    }
+    button {
+        padding: 15px 25px;
+        font-size: 16px;
+        text-align: center;
+        cursor: pointer;
+        outline: none;
+        color: #fff;
+        background-color: crimson;
+        border: none;
+        border-radius: 15px;
+        box-shadow: 0 9px #999;
+        }
+
+    button:hover {background-color: rgb(175, 17, 49)}
+
+    button:active {
+        background-color: rgb(104, 13, 31);
+        box-shadow: 0 5px #666;
+        transform: translateY(4px);
+    }
+    .content{
+        padding: 5%;
+    }
+    
+
+
+</style>
+<body>
+    <nav class="navbar">
+        <div class="max-width">
+            <div class="logo"><a href="#">Portfolio</a></div>
+            <ul class="menu">
+                <li><a href="portfolio.html" class="menu-btn">Home</a></li>
+                <li><a href="Projects.html" class="menu-btn">Projects </a></li>
+                <li><a href="portfolio.html#about" class="menu-btn">About</a></li>
+                <li><a href="portfolio.html#services" class="menu-btn">Expertise</a></li>
+                <li><a href="portfolio.html#skills" class="menu-btn">Skills</a></li>
+                <li><a href="portfolio.html#contact" class="menu-btn">Contact</a></li>
+            </ul>
+            <div class="menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+    
+    <section class="cards">
+        <h2 class="title">My Projects</h2>
+        <div class="projects">
+
+            <div class="project">
+                <div>
+                    <video width="100%" controls src="Project 1 HTML CSS.mp4" ></video>
+                </div>
+                <div class="content">
+                    <h2>Portfolio Project</h2>
+                    <article>
+                        This is basically a one pager portfolio Template project made in HTML/CSS for an imaginary person on the internet. 
+                    </article>
+                    <div class="btn">
+                        <a target="_blank" href="https://akash-highschool-programmer.netlify.app/"><button>Visit Project</button></a>
+                        <a target="_blank" href="https://github.com/Srinivasan-Akash/Portfolio-Project-1"><button>Visit Code</button></a>
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="project">
+                <div>
+                    <video width="100%" controls src="Assignment 2.mp4" ></video>
+                </div>
+                <div class="content">
+                    <h2>Restraunt Landing Page</h2>
+                    <article>
+                        This is basically a one pager portfolio Template project made in HTML/CSS for an imaginary Restraunt on the internet. 
+                    </article>
+                    <div class="btn">
+                        <a target="_blank" href="https://akash-restraunt-onepager.netlify.app/"><button>Visit Project</button></a>
+                        <a target="_blank" href="https://github.com/Srinivasan-Akash/Restraunt-Home-Page"><button>Visit Code</button></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project">
+                <div>
+                    <video width="100%" controls src="20.07.2022_19.57.32_REC.mp4" ></video>
+                </div>
+                <div class="content">
+                    <h2>SEO based company Website</h2>
+                    <article>
+                        This is basically a one pager portfolio Template project made in HTML/CSS for an imaginary company that enhances your SEO on the internet. 
+                    </article>
+                    <div class="btn">
+                        <a target="_blank" href="https://github.com/Srinivasan-Akash/Crush-Your-Competitors"><button>Visit Code</button></a>
+                        <a target="_blank" href="https://gregarious-croquembouche-f9d472.netlify.app/"><button>Visit Project</button></a>
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="project">
+                <div>
+                    <video width="100%" controls src="20.07.2022_18.42.30_REC.mp4" ></video>
+                </div>
+                <div class="content">
+                    <h2>E-commerce Website UI</h2>
+                    <article>
+                        This is basically a one pager portfolio Template project made in HTML/CSS for an imaginary buissness on the internet. 
+                    </article>
+                    <div class="btn">
+                        <a target="_blank" href="https://sparkling-hamster-fa3095.netlify.app"><button>Visit Project</button></a>
+                        <a target="_blank"href="https://github.com/Srinivasan-Akash/HeadPhone-Store"><button>Visit Code</button></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project">
+                <div>
+                    <video width="100%" controls src="19.07.2022_18.39.39_REC.mp4" ></video>
+                </div>
+                <div class="content">
+                    <h2>Web Developer Portfolio</h2>
+                    <article>
+                        This is basically a fully blown portfolio project made in HTML/CSS for an imaginary web developer on the internet. 
+                    </article>
+                    <div class="btn">
+                        <a target="_blank"href="https://tourmaline-trifle-b1b0f3.netlify.app/"><button>Visit Project</button></a>
+                        <a target="_blank"href="https://github.com/Srinivasan-Akash/Developer-Landing-Page"><button>Visit Code</button></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project">
+                <div>
+                    <video width="100%" controls src="19.07.2022_11.10.51_REC.mp4" ></video>
+                </div>
+                <div class="content">
+                    <h2>Open Sources Software Website</h2>
+                    <article>
+                        This is basically a target="_blank"one pager portfolio Template project made in HTML/CSS for an imaginary open source project on the internet. 
+                    </article>
+                    <div class="btn">
+                        <a target="_blank"href="https://luxury-empanada-d9af75.netlify.app/"><button>Visit Project</button></a>
+                        <a target="_blank"href="https://github.com/Srinivasan-Akash/Cloud-Hosting-Website"><button>Visit Code</button></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project">
+                <div>
+                    <video width="100%" controls src="27.07.2022_19.30.17_REC.mp4" ></video>
+                </div>
+                <div class="content">
+                    <h2>Marketting Company Website</h2>
+                    <article>
+                        This is basically a target="_blank"fully blown project made in HTML/CSS for an imaginary marketting company on the internet. 
+                    </article>
+                    <div class="btn">
+                        <a target="_blank"href="https://stalwart-queijadas-13973d.netlify.app/"><button>Visit Project</button></a>
+                        <a target="_blank"href="https://github.com/Srinivasan-Akash/Website-Developeing-Company"><button>Visit Code</button></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project">
+                <div>
+                    <video width="100%" controls src="22.07.2022_21.21.27_REC.mp4" ></video>
+                </div>
+                <div class="content">
+                    <h2>Plant Nurserry Website</h2>
+                    <article>
+                        This is basically a one pager template project made in HTML/CSS for an imaginary plant nursery on the internet. 
+                    </article>
+                    <div class="btn">
+                        <a target="_blank" href="https://github.com/Srinivasan-Akash/Plant-Nursery-Website"><button>Visit Code</button></a>
+                        <a target="_blank" href="https://stalwart-gnome-19487d.netlify.app/"><button>Visit Project</button></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project">
+                <div>
+                    <video width="100%" controls src="27.07.2022_19.21.29_REC.mp4" ></video>
+                </div>
+                <div class="content">
+                    <h2>Web Developing & Hosting Company Website</h2>
+                    <article>
+                        This is basically a fully blown project made in HTML/CSS for an imaginary web hosting company on the internet. 
+                    </article>
+                    <div class="btn">  
+                        <a target="_blank" href="https://glistening-piroshki-84f8a3.netlify.app/"><button>Visit Project</button></a>                        
+                        <a target="_blank" href="https://github.com/Srinivasan-Akash/Hosting-Service-Website-Frontend"><button>Visit Code</button></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project">
+                <div>
+                    <video width="100%" controls src="25.07.2022_16.34.40_REC.mp4" ></video>
+                </div>
+                <div class="content">
+                    <h2>Home Design Website</h2>
+                    <article>
+                        This is basically a one pager project made in HTML/CSS for an imaginary home designing company on the internet. 
+                    </article>
+                    <div class="btn">
+                        <a target="_blank"  href="https://quiet-semolina-6b674e.netlify.app/"><button>Visit Project</button></a>                       
+                        <a target="_blank" href="https://github.com/Srinivasan-Akash/Industrial-Design-Website"><button>Visit Code</button> </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project">
+                <div>
+                    <video width="100%" controls src="My website.png" poster="My website.png" ></video>
+                </div>
+                <div class="content">
+                    <h2>Justise Court Website</h2>
+                    <article>
+                        This is basically a one pager template project made in HTML/CSS for an imaginary law fighting company on the internet. 
+                    </article>
+                    <div class="btn">
+                        <a target="_blank" href="https://gregarious-croquembouche-f9d472.netlify.app/"><button>Visit Project</button></a>
+                        <a target="_blank" href="https://github.com/Srinivasan-Akash/Your-Justise-is-our-top-priority"><button>Visit Code</button></a>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
